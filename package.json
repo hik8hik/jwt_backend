@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/HikHikHacker/jwt_backend#readme",
     "dependencies": {
+        "dotenv": "^16.0.0",
         "express": "^4.17.3"
     }
 }
