@@ -5,7 +5,7 @@ const errorHandler = (err, req, res, next) => {
 
   error.message = err.message;
 
-  console.log(err);
+  //console.log(err);
 
   if (err.code === 1000) {
     const message = `Duplicate Field Value Enter`;
@@ -22,3 +22,5 @@ const errorHandler = (err, req, res, next) => {
     error: error.message || "Server Error",
   });
 };
+
+module.exports = errorHandler;
